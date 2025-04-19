@@ -1,0 +1,67 @@
+Dynamic Website : Function (Database) 
+		  Create Data + Read Data + Update data +  delete 
+		  Mysql Database 
+PHP SESSION 1 
+		install -> Xampp Server (appache friend)
+		localhost xamp (start)
+		.php index.html x index.php 
+		.php can we use html css & js ? yes .php
+
+		where we create php files ? 
+		folder (htdocs)	
+		index.php about.php contact.php -> 
+		folder name : FSWD-Batch-31+LWR-Batch-18
+		Main file index.php
+		starter <?php   ?>
+		for print in php 
+		we use echo 
+
+localhost/FSWD-Batch-31+LWR-Batch-18/index.php
+localhost/foldername
+	
+
+
+------------------------------------------------------
+php data types
+	      1- Char a b  c d e f "abdullah" "my name is abdullah"
+	      2- number  1 ,2 ,3 ,4,5 ,5 
+	      3- float 12.23
+	      4- array "abdullah","hassan","waseem"
+	      5- True False Boolean data type
+
+Char " abdullah " 
+number 1`2212
+------------------------------------------------------
+Session 2: 
+	 Variables
+	
+// echo "abdullah";
+
+// echo 12;
+// echo 4;
+
+
+// $name = "my name is abdullah";
+
+// echo $name;
+
+// $&name ; x 
+// $433abdulla = 12; x
+// $name = "abdullah"; 
+// $Name = "hassan";
+// $_name = "abdullah"; // _ is allowed in variable name
+
+
+// echo $name; //abdullah
+// echo "<br>";
+// echo $Name; //hassan
+// echo "<br>";
+------------------------------------------
+
+	
+
+	  
+
+
+
+
