@@ -57,10 +57,23 @@ Session 2:
 // echo $Name; //hassan
 // echo "<br>";
 ------------------------------------------
+PHP session #3
+		- <?php ?> | <?php if(){  ?>
+		- Form submit with get request ( network / url)
+		- $_GET[]; key : value
+		- how to use store values 
+		- if(isset())
+		- Comparison Operators 
+			- ==
+		- Logical Operators
+			 && and
 
-	
+	  	- if else 
+			if(Condition) {  statements }
+		-Header function 
+			header('location:dashboard.php');
+		
 
-	  
 
 
 
