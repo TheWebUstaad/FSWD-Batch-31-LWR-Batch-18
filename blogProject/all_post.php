@@ -40,7 +40,7 @@
         <td> <?php echo $row['create_at'] ?> </td>
         <td>
           <a href="view_post.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">View</a>
-          <button class="btn btn-primary btn-sm">Edit</button>
+          <a href="edit_post.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
           <a href="actions/delete_post.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
         </td>
       </tr>
