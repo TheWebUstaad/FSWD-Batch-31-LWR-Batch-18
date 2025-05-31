@@ -57,7 +57,7 @@ if(!isset($_SESSION['id'])) {
   <a href="dashboard.php"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
   <a href="create_post.php"><i class="fas fa-plus-circle me-2"></i>Create Post</a>
   <a href="all_post.php"><i class="fas fa-file-alt me-2"></i>Posts</a>
-  <a href="#"><i class="fas fa-users me-2"></i>Users</a>
+  <a href="users.php"><i class="fas fa-users me-2"></i>Users</a>
   <a href="#"><i class="fas fa-cogs me-2"></i>Settings</a>
   <a href="#"><i class="fas fa-chart-bar me-2"></i>Reports</a>
   <a href="logout.php"><i class="fas fa-sign-out-alt me-2"></i>Logout</a>

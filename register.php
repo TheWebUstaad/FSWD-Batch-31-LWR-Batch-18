@@ -34,20 +34,21 @@
 </head>
 <body>
     <?php 
-    if(isset($_GET['myname'])){
 
-        $name = $_GET['myname'];
-        $email = $_GET['myemail'];
-        $password =  $_GET['mypassword'];
-        $confirm_password = $_GET['myconfirm_password'];
+    // if(isset($_GET['myname'])){
+
+    //     $name = $_GET['myname'];
+    //     $email = $_GET['myemail'];
+    //     $password =  $_GET['mypassword'];
+    //     $confirm_password = $_GET['myconfirm_password'];
         
-        echo $name;
-        echo $email;
-        echo $password;
-        echo $confirm_password;
+    //     echo $name;
+    //     echo $email;
+    //     echo $password;
+    //     echo $confirm_password;
         
 
-    }
+    // }
     
 
    
@@ -71,22 +72,22 @@
 
       <p class="text-muted">Please fill in this form to register</p>
     </div>
-    <form method="get" >
+    <form method="post" action="actions/register_action.php">
       <div class="mb-3">
         <label for="name" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="name" name="myname" required />
+        <input type="text" class="form-control" id="name" name="myname" />
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" name="myemail" required />
+        <input type="email" class="form-control" id="email" name="myemail" />
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="mypassword" required />
+        <input type="password" class="form-control" id="password" name="mypassword" />
       </div>
       <div class="mb-3">
         <label for="confirm_password" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" id="confirm_password" name="myconfirm_password" required />
+        <input type="password" class="form-control" id="confirm_password" name="myconfirm_password" />
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-primary">Register</button>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - WebSaaz Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header (Same as index.html) -->
+    <header class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <!-- Header content (same as index.html) -->
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative py-20 md:py-28 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-pattern"></div>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our Courses</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200">Enhance your skills with our professional development courses</p>
+        </div>
+    </section>
+
+    <!-- Courses Introduction -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Learn from Industry Experts</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our courses are designed and taught by experienced professionals who bring real-world expertise to the classroom.
+                    Whether you're looking to start a new career or enhance your existing skills, we have a course for you.
+                </p>
+            </div>
+
+            <!-- Course Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full">All Courses</button>
+                <button class="bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition-colors">Web Development</button>
+                <button class="bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition-colors">Mobile Development</button>
+                <button class="bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition-colors">UI/UX Design</button>
+                <button class="bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-full transition-colors">Digital Marketing</button>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+                    <div class="relative">
+                        <img src="assets/images/course1.jpg" alt="Web Development Bootcamp" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-400 text-gray-900 text-sm font-bold px-3 py-1 rounded-full">
+                            Bestseller
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Web Development</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-sm ml-1">4.9 (120 reviews)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Full-Stack Web Development Bootcamp</h3>
+                        <p class="text-gray-600 mb-4">Learn to build complete web applications from front-end to back-end using modern technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                            <div class="flex items-center mb-2 sm:mb-0">
+                                <img src="assets/images/instructor1.jpg" alt="John Smith" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">John Smith</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="far fa-clock text-gray-500 mr-1"></i>
+                                <span class="text-sm text-gray-600">12 weeks</span>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-blue-600">$1,299</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">$1,599</span>
+                            </div>
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+                    <div class="relative">
+                        <img src="assets/images/course2.jpg" alt="Laravel Training" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">PHP Framework</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-sm ml-1">4.8 (95 reviews)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Laravel Masterclass: Build Modern Web Applications</h3>
+                        <p class="text-gray-600 mb-4">Master Laravel, the popular PHP framework, and learn to build robust, scalable web applications with clean code and best practices.</p>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                            <div class="flex items-center mb-2 sm:mb-0">
+                                <img src="assets/images/instructor2.jpg" alt="Sarah Johnson" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Sarah Johnson</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="far fa-clock text-gray-500 mr-1"></i>
+                                <span class="text-sm text-gray-600">8 weeks</span>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-blue-600">$899</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">$1,099</span>
+                            </div>
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+                    <div class="relative">
+                        <img src="assets/images/course3.jpg" alt="React Frontend Course" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                            New
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Frontend</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-sm ml-1">4.7 (82 reviews)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Modern Frontend with React & Redux</h3>
+                        <p class="text-gray-600 mb-4">Learn to build dynamic, interactive user interfaces with React.js, manage state with Redux, and create single-page applications.</p>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                            <div class="flex items-center mb-2 sm:mb-0">
+                                <img src="assets/images/instructor3.jpg" alt="Michael Brown" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Michael Brown</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="far fa-clock text-gray-500 mr-1"></i>
+                                <span class="text-sm text-gray-600">6 weeks</span>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-blue-600">$799</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">$999</span>
+                            </div>
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+                    <div class="relative">
+                        <img src="assets/images/course4.jpg" alt="Mobile App Development" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Mobile</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="text-sm ml-1">4.9 (105 reviews)</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Flutter Mobile App Development</h3>
+                        <p class="text-gray-600 mb-4">Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase with Flutter and Dart.</p>
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
+                            <div class="flex items-center mb-2 sm:mb-0">
+                                <img src="assets/images/instructor4.jpg" alt="Emily Davis" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Emily Davis</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="far fa-clock text-gray-500 mr-1"></i>
+                                <span class="text-sm text-gray-600">10 weeks</span>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-blue-600">$999</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">$1,299</span>
+                            </div>
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+                    <div class="relative">
+                        <img src="assets/images/course5.jpg" alt="UI/UX Design" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full">Design</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 

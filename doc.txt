@@ -1,3 +1,84 @@
+Laravel Login System 
+		Done -1st Step 
+			- Table - Users user -> role_id
+			- Table - Role role_id
+			- Multipule Dashboard 
+			- User / Admin 
+			- migration -> blue Print (ok) (users/role)
+		Done -2nd Step
+			- Seeder Dummy Content (admin/users with password)
+		Done -3rd Step
+			-MiddleWare (Aunty -> Camera Man) 
+		Done -4th Step 
+			-Model 
+		Done -5th step
+			-login page View 
+		Done -6th step
+			-Controller (logics)
+		Done -7th step 
+			-routes with (controller + Middleware )
+
+----------------------------------------
+Login System : 
+		middleware (Session Session_start)->(role admin )->Routes  
+		providers 
+		guards 
+		login system (Role) 
+
+		Controller :
+			logics 
+		- Post Request in Laravel
+
+----------------------------------------
+Laravel Multi Role Admin panel 
+			- How to update and insert colom in migration 
+				php artisan make:migration add_role_id_to_users_table --table=users
+			- php artisan make:model Role -m
+
+
+----------------------------------------
+Laravel Day 2: 
+		- php aritsan serve
+		- Routes 
+				(index.php about.php)
+				about.blade.php url link 
+			- With  functional Routes
+			- with Controllers 
+			- route('name')
+		-How Tyo set Image in Laravle 
+			<img src={{ asset('images/logo.pnh') }}
+
+		- migartion : Blueprint 
+			  How we create Any table in laravel 
+			php artisan make:migration create_courses_table
+			php artisan make:migartion create_services_table
+		-Prefix /login /register /dahsboard mywbeist.com/admin/login 
+				
+------------------------------------------------------
+Laravel Day One : 
+		 - Open Sroce MVC FrameWork 
+		 - What is farmae work 
+		 - 				
+	
+		- Views 
+		- .php x .blade.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------
 Dynamic Website : Function (Database) 
 		  Create Data + Read Data + Update data +  delete 
 		  Mysql Database 
@@ -72,9 +153,30 @@ PHP session #3
 			if(Condition) {  statements }
 		-Header function 
 			header('location:dashboard.php');
+================================================
+blog project	
+	pages : 
+		add post
+		view post
+		register users
 		
+================================================
+Session #4 
+	  - Post method 
+	  - How to handle actions -> 
+	  - $_SERVER["REQUEST_METHOD"] == "POST"
+	  - if else if
+	  - strlen 
+	  - trim (extra space remove)
+	  - in_array
+	  - filter_var	
+	  - Abdullah123
+================================================
+		'
+values ('$name','email','password')
 
 
+SELECT * from users
 
 
 
