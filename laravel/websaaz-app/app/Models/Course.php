@@ -12,7 +12,6 @@ class Course extends Model
         'duration',
         'mentor',
         'fees',
-        'image',
-        
+        'image',  
  ];
 }

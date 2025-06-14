@@ -12,7 +12,9 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses = Course::all();
+        
+         return view('admin.courses.index', compact('courses'));
     }
 
     /**
@@ -56,7 +58,8 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        //
+        // dd($course);
+        return view('admin.courses.show', compact('course'));
     }
 
     /**
@@ -64,7 +67,8 @@ class CourseController extends Controller
      */
     public function edit(Course $course)
     {
-        //
+        // dd($course);
+        return view('admin.courses.edit', compact('course'));
     }
 
     /**
@@ -72,7 +76,32 @@ class CourseController extends Controller
      */
     public function update(Request $request, Course $course)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'duration' => 'required|string|max:100',
+            'mentor' => 'required|string|max:100',
+            'fees' => 'required|numeric',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        // if($request->hasfile('image')){
+        //     $validatedData['image'] = $request->file('image')->store('images/courses', 'public');
+        // }
+        if($request->hasfile('image')){
+             // Delete old image if it exists
+        if ($course->image && file_exists(public_path($course->image))) {
+            unlink(public_path($course->image));
+        }    
+
+
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('images/courses'), $filename);
+            $validatedData['image'] = 'images/courses/' . $filename;
+        }
+        $course->update($validatedData);
+        return redirect()->route('courses.index')->with('success', 'Course updated successfully');
     }
 
     /**
