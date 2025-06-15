@@ -49,7 +49,7 @@ class CourseController extends Controller
             // $validatedData['image'] = $request->file('image')->store('courses', 'public');
 
         $course = Course::create($validatedData);
-        return redirect()->route('courses.create')->with('success', 'Course created successfully');
+        return redirect()->route('courses.index')->with('success', 'Course created successfully');
         
     }
 
@@ -109,6 +109,11 @@ class CourseController extends Controller
      */
     public function destroy(Course $course)
     {
-        //
+        $course->delete();
+        // Delete the image file if it exists
+        if ($course->image && file_exists(public_path($course->image))) {
+            unlink(public_path($course->image));
+        }
+        return redirect()->route('courses.index')->with('delete', 'Course deleted successfully');
     }
 }

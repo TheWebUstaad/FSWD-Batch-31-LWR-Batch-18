@@ -5,6 +5,17 @@
 
 <div class="container mt-4">
     <div class="table-responsive">
+       @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
+            </div>
+        @endif    
+        @if(session('delete'))
+            <div class="alert alert-danger">
+                {{ session('delete') }}
+            </div>
+        @endif    
+       
         <table class="table table-bordered table-hover align-middle text-center">
             <thead class="table-dark">
                 <tr>
@@ -14,6 +25,7 @@
                     <th>Fees</th>
                     <th>Image</th>
                     <th>Action</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,8 +45,14 @@
                         <td>
                             <a href="{{ route('courses.show',$course->id) }}" class="btn btn-info">View</a>
                             <a href="{{ route('courses.edit',$course->id) }}" class="btn btn-primary">Edit</a>
-                            
                         </td>
+                        <td>
+                            <form method="post" action={{ route('courses.destroy',$course->id) }}>
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </form>
+                        </td>   
                     </tr>
                 @endforeach
             </tbody>
